@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -35,8 +35,8 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="columns">
 						<div className="column">
-						<h4 class="heading h4">Skills</h4>
-						<ul class="h4">
+						<h4 className="heading h4">Skills</h4>
+						<ul className="h4">
 							<li>HTML</li>
 							<li>CSS</li>
 							<li>JavaScript</li>
@@ -50,14 +50,14 @@ const IndexPage = () => (
 							
 						<h4 className="heading h4">Latest Articles</h4>
 						<div className="article-clip">
-							<p className="post-link"><Link to="#">Red hair crookshanks</Link></p>
+							<p className="post-link"><Link to="/">Red hair crookshanks</Link></p>
 							<p >Bludger Marauder’s Map Prongs sunshine daisies butter mellow Ludo Bagman. Beaters gobbledegook N.E.W.T.,
 							Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel.
 							</p>
 						</div>
 
 						<div className="article-clip">
-							<p className="post-link"><Link to="#">Red hair crookshanks</Link></p>
+							<p className="post-link"><Link to="/">Red hair crookshanks</Link></p>
 							<p >Bludger Marauder’s Map Prongs sunshine daisies butter mellow Ludo Bagman. Beaters gobbledegook N.E.W.T.,
 							Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel.
 							</p>

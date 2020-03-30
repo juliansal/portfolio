@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -23,20 +23,20 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
+  	return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      	<Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
-        <footer class="footer">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-			<p class="has-text-centered">Designed and Developed by
-				<a class="is-red" target="_blank" href="https://github.com/juliansal">Julian Salguero</a> &copy; 2018
+        <footer className="footer">
+			<p className="has-text-centered">
+				Designed and Developed by <Link 
+					className="is-red" 
+					target="_blank" 
+					to="https://github.com/juliansal">Julian Salguero</Link> © {new Date().getFullYear()}
 			</p>
         </footer>
     </>
-  )
+  	)
 }
 
 Layout.propTypes = {
